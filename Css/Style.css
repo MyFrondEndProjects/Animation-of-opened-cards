@@ -4,3 +4,66 @@
     padding:0;
     box-sizing:border-box;
 }
+body 
+{
+    background-color:#ADD8E6;
+}
+.card1, .card2, .card3, .card4
+{
+
+    
+
+    width:20em;
+    height:24em;
+    margin-left:0.1em;
+    background-position:center;
+    background-size:100%;
+    background-color:gray;
+    background-image: none;;
+    margin-top:1em;
+    opacity:0.8;
+    text-align:center;
+    padding-top:13%;
+
+
+    
+}
+.car1 .card2 .card3 .card4, a 
+{
+   border :2px solid orange;
+   font-size:1.5em;
+   width:15em;
+   text-decoration:none;
+   background-color:black;
+   color:white;
+   border-radius:0.3em;
+}
+.cardcontainer
+{
+    width:70em;
+    height:55em;
+    background-image: url('/İmg/Free\ Photo\ _\ Football\ stadium\ at\ night\ generative\ ai.jpeg');
+    background-position: center;
+    background-size:100%;
+    background-repeat:no-repeat;
+    display:inline-flex;
+    margin-left:24em;
+    margin-top:2.4em;
+    border-radius:0.5em;
+    padding-top:10em;
+}
+.card 
+{
+    position:absolute;
+    width:25em;
+    height:10em;
+    background-color:red;
+    top:44%;
+    height:40em;
+    left:39%;
+    border-radius:0.5em;
+   text-align:center;
+   padding-top:13em;
+   background-size:100%;
+   
+}
