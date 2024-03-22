@@ -1,119 +1,97 @@
-const card1=document.querySelector(".card1");
-const card2=document.querySelector(".card2");
-const card3=document.querySelector(".card3");
-const card4=document.querySelector(".card4");
+
+const Playernames=document.querySelector(".Playernames");
+
+
 const cardcontainer=document.querySelector(".cardcontainer");
+const player1=document.querySelector(".player1");
 
 
-let geridon=document.createElement("button");
-geridon.style.position="absolute";
-geridon.style.right="25%";
-geridon.style.top="5%";
-geridon.textContent="Tekrar kart seç";
-geridon.style.width="5em";
-geridon.style.height="3em";
-geridon.style.backgroundColor="White";
-geridon.style.color="Green";
-geridon.style.borderRadius="0.5em";
-
-let cards1 = document.createElement("div");
+const player1name=document.querySelector(".player1name");
+const player2name=document.querySelector(".player2name");
 
 
-const cardarray=[card1,card2,card3,card4];
+const player2=document.querySelector(".player2");
+const Playername1=document.querySelector(".Playername");
+const info=document.querySelector(".info");
+const loginblock=document.querySelector(".loginblock");
+
+let Playername2=document.createElement("input");
+Playername2.type="text";
+Playername2.classList.add("Playername2");
+Playername2.remove();
 
 
 
-for(let i=0; i<cardarray.length; i++)
+
+const Names1=(e) =>
 {
+     if(e.keyCode=='13')
+     {
+        e.preventDefault();
     
+         player1name.textContent=Playername1.value;
+         Playername1.value="";
+         Playername1.remove();
+         loginblock.appendChild(Playername2);
+         info.textContent="2. oyuncunun adını giriniz";
+         info.style.color="Green";
+       
+     }  
 
- const cardopen=() => 
- {
-  
-    if(cardarray[i].classList=="card1")
-    {
-  
-     cards1.classList.add("card");
-     cards1.style.backgroundImage = "url('İmg/Haalandcard.jpeg')";
-   
-     card1.remove();
-     card2.remove();
-     card3.remove();
-     card4.remove();
-     cards1.style.top="15%";
-     card1.style.height="53%";
-
-     cardcontainer.appendChild(geridon);
-     cardcontainer.appendChild(cards1);
-  
-    }
-    if(cardarray[i].classList=="card2")
-    {
-  
-     cards1.classList.add("card");
-     cards1.style.backgroundImage = "url('İmg/JUDEBELLINGHAM.jpeg')";
-     card1.remove();
-     card2.remove();
-     card3.remove();
-     card4.remove();
-     cards1.style.top="15%";
-     card1.style.height="53%";
-
-
-     cardcontainer.appendChild(geridon);
-     cardcontainer.appendChild(cards1);
-    }
-    if(cardarray[i].classList=="card3")
-    {
-
-        cards1.classList.add("card");
-        cards1.style.backgroundImage = "url('İmg/KYLIANMBAPPE.jpeg')";
-      
-        card1.remove();
-        card2.remove();
-        card3.remove();
-        card4.remove();
-        cards1.style.top="15%";
-        card1.style.height="53%";
-   
-        cardcontainer.appendChild(geridon);
-        cardcontainer.appendChild(cards1);
-    }
-    if(cardarray[i].classList=="card4")
-    {
-
-        cards1.classList.add("card");
-        cards1.style.backgroundImage = "url('İmg/CristianoRonaldocoard.jpeg')";
-      
-        card1.remove();
-        card2.remove();
-        card3.remove();
-        card4.remove();
-        cards1.style.top="15%";
-        card1.style.height="53%";
-   
-        cardcontainer.appendChild(geridon);
-        cardcontainer.appendChild(cards1);
-    }
-
-    
-
-
- }
-    const geri =() =>
-    {
-        cards1.remove();
-       cardcontainer.appendChild(card1);
-       cardcontainer.appendChild(card2);
-       cardcontainer.appendChild(card3);
-       cardcontainer.appendChild(card4);
-       geridon.remove();
-    }
-
-
- geridon.addEventListener("click", geri);
-    cardarray[i].addEventListener('click',cardopen);
+ 
 }
 
 
+const Names2=(e)=>
+{
+    if(e.keyCode=='13')
+     {
+       
+      
+       
+        player2name.textContent=Playername2.value;
+        Playername2.value="";
+        loginblock.appendChild(Playername2);
+        
+    
+
+        Playername2.remove();
+        info.remove();
+
+
+        let startbutton=document.createElement("button");
+        startbutton.style.position="absolute";
+        startbutton.style.backgroundColor="Green";
+        startbutton.style.color="White";
+        startbutton.style.width="15em";
+        startbutton.style.borderRadius="0.5em";
+        startbutton.style.height="4em";
+        startbutton.textContent="Oyuna başla";
+        startbutton.style.top="40%";
+        startbutton.style.left="35%";
+        Playernames.appendChild(startbutton);
+
+        e.preventDefault();
+
+
+        const Start=() =>
+        {
+            loginblock.remove();
+        }
+
+        startbutton.addEventListener("click",Start);
+     }  
+}
+
+
+
+
+
+
+
+
+
+
+Playername2.addEventListener("keypress",Names2)
+Playername1.addEventListener("keypress",Names1);
 
