@@ -79,6 +79,7 @@ body
     color:orange;
     padding-top:6em;
 }
+
 .Playername
 {
     width:25em;
@@ -104,3 +105,193 @@ body
     top:51.9%;
     left:38.4%;
 }
+
+.card1 div 
+{
+    position:absolute;
+    width:15em;
+    height:20em;
+    background-color:black;
+    left:16%;
+    top:20%;
+    border-radius:0.5em;
+    
+}
+.card1 div img
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ border-radius:0.5em;
+
+}
+
+.card2 div 
+{
+    position:absolute;
+    width:15em;
+    height:20em;
+    background-color:black;
+    left:30%;
+    top:20%;
+    border-radius:0.5em;
+}
+.card2 div img
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ border-radius:0.5em;
+}
+
+.card3 div 
+{
+    position:absolute;
+    width:15em;
+    height:20em;
+    background-color:black;
+    left:45%;
+    top:20%;
+    border-radius:0.5em;
+}
+.card3 div img
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ border-radius:0.5em;
+}
+
+.card4 div 
+{
+    position:absolute;
+    width:15em;
+    height:20em;
+    background-color:black;
+    left:60%;
+    top:20%;
+    border-radius:0.5em;
+}
+.card4 div img
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ border-radius:0.5em;
+}
+
+.card5 div 
+{
+    position:absolute;
+    width:15em;
+    height:20em;
+    background-color:black;
+    left:75%;
+    top:20%;
+    border-radius:0.5em;
+}
+.card5 div img
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ border-radius:0.5em;
+}
+
+.card6 div 
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ left:16%;
+ top:60%;
+ border-radius:0.5em;
+}
+.card6 div img
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ border-radius:0.5em;
+}
+.card7 div 
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ left:45.1%;
+ top:60%;
+ border-radius:0.5em;
+}
+.card7 div img
+{
+
+ width:15em;
+ height:20em;
+ background-color:black;
+ border-radius:0.5em;
+}
+.card8 div 
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ left:30.1%;
+ top:60%;
+ border-radius:0.5em;
+}
+.card8 div img
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ border-radius:0.5em;
+}
+.card9 div 
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ left:60%;
+ top:60%;
+ border-radius:0.5em;
+}
+.card9 div img
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ border-radius:0.5em;
+}
+
+.card10 div 
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ left:75.1%;
+ top:60%;
+ border-radius:0.5em;
+}
+.card10 div img
+{
+ position:absolute;
+ width:15em;
+ height:20em;
+ background-color:black;
+ border-radius:0.5em;
+}
+
