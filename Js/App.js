@@ -18,8 +18,7 @@ const card7 = document.querySelector(".card7");
 const card8 = document.querySelector(".card8");
 const card9 = document.querySelector(".card9");
 const card10 = document.querySelector(".card10");
-const player1point=document.querySelector(".player1point");
-const player2point=document.querySelector(".player2point");
+
 let Playername2 = document.createElement("input");
 Playername2.type = "text";
 Playername2.classList.add("Playername2");
@@ -77,25 +76,23 @@ const Names2 = (e) => {
             let oyunsirasi = 1;
 
             const kartiac = (index) => {
-                if (oyunsirasi == 1) {
-                 {
+              for(let x=0; x<cardarray.length; x++)
+              {
+                if (oyunsirasi == 1) 
+                {
+                alert("Birinci oyuncu tıkladı");
+                    oyunsirasi = 2;
+                    break;
+                } 
+                
+                else if (oyunsirasi == 2) 
+                {
+                alert("İkinci oyuncu tıkladı")
+                    oyunsirasi = 1;
+                    break;
 
-                  player1point.textContent=10;
-
-
-
-                  oyunsirasi = 2;
-                 }
-                  
-                } else if (oyunsirasi == 2) {
-                 {
-
-                player2point.textContent=20;
-
-                  oyunsirasi = 1;
-                 }
-                   
                 }
+              }
             };
 
             for (let i = 0; i < cardarray.length; i++) {
@@ -110,4 +107,3 @@ const Names2 = (e) => {
 Playername2.addEventListener("keypress", Names2);
 Playername1.addEventListener("keypress", Names1);
 
-let a = 1;
