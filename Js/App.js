@@ -140,3 +140,4 @@ const Names2=(e)=>
 Playername2.addEventListener("keypress",Names2)
 Playername1.addEventListener("keypress",Names1);
 
+let a=1;
