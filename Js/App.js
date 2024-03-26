@@ -18,7 +18,8 @@ const card7 = document.querySelector(".card7");
 const card8 = document.querySelector(".card8");
 const card9 = document.querySelector(".card9");
 const card10 = document.querySelector(".card10");
-
+const player1point = document.querySelector(".player1point");
+const player2point = document.querySelector(".player2point");
 let Playername2 = document.createElement("input");
 Playername2.type = "text";
 Playername2.classList.add("Playername2");
@@ -39,7 +40,6 @@ const Names1 = (e) => {
         loginblock.appendChild(Playername2);
         info.textContent = "2. oyuncunun adını giriniz";
         info.style.color = "Green";
-
     }
 }
 
@@ -75,24 +75,16 @@ const Names2 = (e) => {
 
             let oyunsirasi = 1;
 
-            const kartiac = (index) => {
-              for(let x=0; x<cardarray.length; x++)
-              {
-                if (oyunsirasi == 1) 
-                {
-                alert("Birinci oyuncu tıkladı");
+            const kartiac = (i) => {
+                if (oyunsirasi == 1) {
+                    alert("Oyun sırası 1 de");
+                    player1point.textContent=30;
                     oyunsirasi = 2;
-                    break;
-                } 
-                
-                else if (oyunsirasi == 2) 
-                {
-                alert("İkinci oyuncu tıkladı")
+                } else if (oyunsirasi == 2) {
+                    alert("Oyun sırası 2 de");
+                    player2point.textContent=30;
                     oyunsirasi = 1;
-                    break;
-
                 }
-              }
             };
 
             for (let i = 0; i < cardarray.length; i++) {
@@ -106,4 +98,3 @@ const Names2 = (e) => {
 
 Playername2.addEventListener("keypress", Names2);
 Playername1.addEventListener("keypress", Names1);
-
